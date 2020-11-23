@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script Tag Work</title>
+    <style>
+    #workoffset
+        {
+            top: 250px;
+            margin: 20px;
+            padding: 10px;
+            width: 500px;
+            position: relative;
+            border: 5px solid #000;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    
+    <div id="workoffset">
+        <p>Hello i want to know offset position of your cover</p>
+       <button onclick="workoffset()">Please Provide me a position of offset</button>
+        <p>Offset value is: <span id="dataoffset"></span></p>
+    </div>
+    <script type="text/javascript">
+        
+        function workoffset()
+        {
+            var workdiv = document.getElementById("workoffset");
+            document.getElementById("dataoffset").innerHTML = workdiv.offsetTop;
+        }
+        
+    </script>
+</body>
+</html>

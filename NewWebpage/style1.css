@@ -1,0 +1,809 @@
+/*21-9-2020*/
+body
+{
+    font: 20px/1.8;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin 0;
+    background-color: #f2f2f2;
+}
+/*---------------------------------------------------------------*/
+/*23-9-2020*/
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*Royal travels and full  black portion*/
+.black
+{
+    padding: 10px;
+    background: #fdfeff;
+    color: #000;
+/*    position: fixed;        Sticky menu (without javascript) not proper*/
+/*    top: 0;                 Sticky menu (without javascript) not proper*/
+/*    width: 100%;           Sticky menu (without javascript) not proper*/
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/*navigation bar ka margin and padding*/
+ul
+{
+    margin 0;
+    padding: 0;
+}
+
+/*navigation ka font and underline*/
+header a
+{
+   color: #000;
+   text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/*navigation ko inline kiya*/
+header li
+{
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+    transition: 0.5s;
+}
+
+#logo
+{
+    float: left;
+}
+
+/*De Tour. ki margin*/
+header #logo h1
+{
+    font-size: 40px;
+    margin: 0;
+}
+
+/*navigation ke home,about,service... ko right mai kiya*/
+header nav
+{
+    float: right;
+    margin-top: 5px;
+    display: block;
+}
+
+/*Active ko color and bold*/
+header .active a
+{
+    color: #ffd111;
+    font-weight: bold;
+}
+
+/*Hover ke settings*/
+header li:hover
+{
+    display: inline-block;
+    border: 0px #f1f1f1;
+    border-style: solid;
+    border-radius: 20px;
+    background: #f0a900;
+}
+
+/*De Tour ka Tour ka color*/
+.highlight
+{
+    color: #ffd111; 
+}
+/* Hover ke text ka colour*/
+header li:hover a
+{
+     color: #282828;;
+    font-weight: bold;
+}
+
+/*---------------------------------------------------*/
+/*24-9-2020*/
+/*Banner Part*/
+
+#banner
+{
+    height: 500px;
+    background: url('../NewWebpage/images/sun.jpg')
+        no-repeat -220px -420px;
+}
+#banner h1
+{
+    margin-top: 90px;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Work Sans';
+    color: white; 
+    animation: slidemode 0.5s ease-in;
+}
+/*08-10-2020 Animation Starts from this DATE--------------*/
+/*    slidemode duration timing-function delay iteration-count direction fill-mode;*/
+
+
+
+/*About us Banner*/
+
+#aboutusbanner
+{
+    height: 250px;
+    background: url('../NewWebpage/images/aboutusbanner.jpg')
+        no-repeat -220px -300px;
+}
+
+#aboutusbanner h1
+{
+    margin: 0px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Work Sans';
+    color: white; 
+}
+
+#aboutusbanner p
+{
+    text-align: center;
+    margin-bottom:0px;
+  font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+    color: white;
+        font-family: 'Open Sans', sans-serif;
+
+}
+
+#aboutusbanner p a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#aboutusbanner p a:hover
+{
+    text-decoration:none;
+    color: yellow;
+    transition: 1.0s;
+}
+
+#banner p
+{
+    margin-bottom:0px;
+  font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+    color: white;
+    animation: slidemode 0.5s ease-in;
+
+}
+
+.btn {
+    margin-top: 15px;
+	box-shadow:inset 0px 0px 22px -10px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:22px;
+	padding:7px 21px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #cc9f52;
+    animation: slidemode 0.5s ease-in;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+
+.but {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffc477 100%, #f6f6f6 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Verdana;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.but:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #eeb44f 100%);
+	background-color:#eeb44f;
+}
+
+
+.ribbon
+{
+    font-size: 25px;
+    background: #f4f4f4;
+    color:
+    padding: 15px;
+    animation: slidemode 0.5s ease-in;
+    
+}
+/*KEYFRAME on ALL RIBBON in Other Pages TOO*/
+@keyframes slidemode{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+    }
+}
+
+.ribbon h1
+{
+    font-family: 'Work Sans';
+    float: left;
+    width: 80%;
+    color:  #FFB85F;
+    
+}
+.ribbon button
+{
+    float: right;
+    margin-top: 35px;
+    width: 20;
+}
+
+/*box*/
+
+#partition
+{
+    margin-top: 5px;
+    background: #dbd9d9;
+}
+
+#partition .box
+{
+    float: left;
+   /* width: 30px;*/
+    padding: 20px;
+
+}
+.pos
+{
+    position: absolute;
+    bottom: -280.667px;
+    left: 269.317px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+.pos2
+{
+    position: absolute;
+    bottom:  -280.667px;
+    left: 665.317px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+.pos3
+{
+    position: absolute;
+    bottom:  -280.667px;
+    left: 995.317px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+/* Within Container */
+.box {
+  height: 440px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+.box img {
+  transition: transform .5s ease;
+}
+.box:hover img {
+  transform: scale(1.06);
+}
+
+/*two part*/
+
+#twopart
+{
+    margin-top: 30px;
+}
+
+#twopart img
+{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+     animation: twopartimg 0.5s ease-in;
+}
+/*Keyframe of twopartimg*/
+@keyframes twopartimg{
+    0%
+    {
+        opacity: 0;
+        transform: skewX(0) translateX(-100px);
+    }
+    90%
+    {
+        opacity: 0.9;
+        
+    }
+    100%
+    {
+        transform: skewY(0deg);
+    }
+}
+#twopart .text
+{
+    float: right;
+    width: 50%;
+    animation: twoparttext 0.5s ease-in;
+}
+/*Keyframe of twoparttext*/
+@keyframes twoparttext{
+    0%
+    {   opacity: 0.1;
+        transform: skewX(0) translateX(100px);
+    }
+    100%
+    {
+        opacity: 0.4;
+          transform: skewY(0deg);
+    }
+}
+#twopart .text h1
+{
+    font-family: 'Work Sans';
+    font-size: 40px;
+    color :#FFB85F;
+    margin: 0;
+}
+#twopart .text blockquote
+{
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#twopart .text p
+{
+     font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+#fa
+{
+    margin-top: 20px;
+}
+
+#fa .icon
+{
+
+    float: left;
+    width: 30%;
+    padding: 17px;
+    text-align: center;
+
+}
+/*------------------------------*/
+/*
+#fa .icon:hover
+{
+
+    font-size: 18px;
+    width: 30%;
+    padding: 19px;
+    text-align: center;
+    transition: 0.8s;
+
+}
+*/
+/*------------------------------*/
+#fa
+{
+    
+    background: #dbd9d9;
+    padding: 10px;
+}
+
+#testi
+{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#testi h1
+{
+    font-size: 30px;
+    text-align: center;
+     animation: slidemode 0.5s ease-in;
+    
+}
+#testi .review
+{
+    float:left;
+    width: 30%;
+    padding: 3px;
+    text-align: center;
+    margin-left: 30px;
+     animation: slidemode 0.5s ease-in;
+}
+/*KeyFrame*/
+/*ANIMATION KEYFRAME FOR BANNER H1,P,BUTTON(banner wala) and TESTI H1,REVIEW(Happy customers wala)*/
+@keyframes slidemode{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+    }
+}
+
+
+#testi .customers
+{
+    font-size: 20px;
+}
+
+footer
+{
+    background: #dbd9d9; /*Background color lagana hai idhr*/
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*About US Page CSS*/
+
+aside.leftpro
+{
+    float: left;
+    width: 65%;
+    text-align: justify;
+     animation: slidemode 0.5s ease-in;
+}
+
+article.rightpro
+{
+    
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+    background: #dbd9d9;
+     animation: slidemode 0.5s ease-in;
+}
+
+/*KeyFrame for About us and Collaboration*/
+
+
+
+article.rightpro h3
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+article.rightpro p
+{
+    margin: 10px;
+    text-align: justify;
+    text-align: center;
+}
+
+aside p.yshow 
+{
+    padding: 15px;
+    background: #F7DC6F;
+    color: black;
+    margin: 10px 0 10px 0;
+    text-align: justify;
+}
+
+aside h1
+{
+    font-size: 35px;
+    text-align:center;
+}
+
+article h1
+{
+    font-size: 22px;
+    text-align: center;
+}
+
+/*KeyFrame*/
+@keyframes slidemode{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+    }
+}
+
+
+article a
+{
+     text-decoration: none;
+    font-size: 18;
+}
+
+/*Services Page CSS---------------------------*/
+
+#bootstrap
+{
+    margin-top: 15px;
+    background: #dbd9d9;;
+}
+#fa2
+{
+    margin-top: 20px;
+}
+
+#fa2 .icon
+{
+
+    float: left;
+    width: 30%;
+    padding: 19px;
+    text-align: center;
+     animation: slidemode 0.5s ease-in;
+}
+#fa2 .icon a
+{
+    text-decoration: none;
+    color: black;
+}
+/*KeyFrame for service and contact us(dono ke peele mai likhe hue Fa icons and P ko kardeta hai animate) */
+@keyframes slidemode{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+    }
+}
+/*------------------------------*/
+/*
+#fa .icon:hover
+{
+
+    font-size: 18px;
+    width: 30%;
+    padding: 19px;
+    text-align: center;
+    transition: 0.8s;
+
+}
+*/
+/*------------------------------*/
+#fa2
+{
+    
+    background: #F7DC6F;
+    padding: 10px;
+}
+
+article.signin
+{
+    float: left;
+    width: 50%;
+}
+article.rightservice
+{
+    float: right;
+    width: 50%;
+}
+article.rightservice li
+{
+    list-style: none;
+    margin-bottom: 5
+}
+div#below
+{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+}
+form.quote input
+{
+    
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Trip Gallery CSS*/
+
+
+#trippartition
+{
+    margin-top: 10px;
+    background: #dbd9d9;
+    margin-bottom: 20px;
+    animation: slidemode 0.5s ease-in;
+    
+}
+/*Keyframe for TripPhotos*/
+@keyframes slidemode{
+    0%
+    {
+        opacity: 0;
+    }
+    90%
+    {
+        opacity: 0.9;
+    }
+    100%
+    {
+    }
+}
+
+
+#trippartition .boxtrip
+{
+    float: left;
+   /* width: 30px;*/
+    padding: 20px;
+
+}
+
+/* Within Container */
+.boxtrip {
+  height: 440px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+.boxtrip img {
+  transition: transform .5s ease;
+}
+.boxtrip:hover img {
+  transform: scale(1.06);
+}
+
+
+/*Media Query*/
+@media(max-width:768px)
+{
+    header #logo, .ribbon, #twopart .text, #fa .icon, #main aside.leftpro, #main article.rightpro
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .ribbon .but
+    {
+        float: none;
+        text-align: center;
+        width: 20%;
+    }
+     #twopart img, #partition, #partition .box .pos, #partition .box .pos2, #partition .box .pos3, #partition .box img
+    {
+        display: none;
+    }
+    
+    #testi .review
+    {
+        float: none;
+        text-align: center;
+        width: 90%;
+    }
+    #fa2, #fa2 .icon
+    {
+      padding: 0;
+        margin-top: 15px;
+        
+    }
+/*
+    #trippartition .boxtrip
+    {
+        padding-left: 155px;
+    }
+*/
+
+}
+
+
+/*Media Queries*/
+@media(max-width:480px)
+{
+    header #logo, .ribbon, #twopart .text, #fa .icon
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .ribbon .but
+    {
+        float: none;
+        text-align: center;
+        width: 20%;
+    }
+     #twopart img
+    {
+        display: none;
+    }
+    #testi .review
+    {
+        float: none;
+        text-align: center;
+        width: 90%;
+    }
+    #partition.box img 
+    {
+        display: none;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
